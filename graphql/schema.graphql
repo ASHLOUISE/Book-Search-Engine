@@ -1,0 +1,17 @@
+# Define types
+type Book {
+  _id: ID!
+  title: String!
+  author: String!
+  description: String!
+}
+
+# Define queries
+type Query {
+  books: [Book!]!
+}
+
+# Define mutations
+type Mutation {
+  addBook(title: String!, author: String!, description: String!): Book!
+}
